@@ -176,7 +176,7 @@ class SomeThingTest extends JFrame
         enter.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent e) {
                 System.out.println(e.getKeyCode());
-                if (e.getKeyCode()==10) {//enter
+                if (e.getKeyCode()==KeyEvent.VK_ENTER) {//enter
                     button.doClick();
                 }
                 if (e.getKeyCode()==17) {//ctrl

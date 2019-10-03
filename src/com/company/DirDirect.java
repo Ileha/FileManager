@@ -19,7 +19,7 @@ public class DirDirect implements Runnable {
 
     public DirDirect(MyRead in, MyWritte out, MyWritte shell_out) {
         core = new Data("/",in ,out, shell_out);
-        modulePath = "/Users/Alexey/Documents/Programm Projects/Java/DirDirector/bytecodemodules";
+        modulePath = "./modulesOut";
 
         loader = new ModuleLoader(modulePath, ClassLoader.getSystemClassLoader());
 
